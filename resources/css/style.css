@@ -129,6 +129,9 @@ main{
   height: auto;
   margin: 1rem 0;
   padding: .5rem 0;
+}
+
+.news .right-container{
   border-left: solid lightgrey 1px;
 }
 
@@ -141,10 +144,10 @@ main{
 .right-container img{
   width: 35%;
   height: auto;
-  padding: .5rem 1rem;
+  padding: 1rem 1rem;
 }
 
-.left-container p{
+.news .left-container p{
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
@@ -192,6 +195,27 @@ main{
 
 .course article{
   padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.exibit{
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.exibit-content{
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.exibit-content .left-container p{
+  padding-top: 0.5rem;
+}
+
+video{
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
 }
 
 .btm-Correction{
