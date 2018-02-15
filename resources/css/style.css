@@ -4,7 +4,7 @@ html {
 }
 
 header, main, footer{
-  width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -62,7 +62,7 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  align-content: center;
+  align-items: center;
   font-size: 1.2rem;
 }
 
@@ -73,14 +73,51 @@ header img{
 header .logo{
   font-size: 2rem;
   padding-left: 1.5rem;
+  flex: 1;
 }
 
 header span{
   color: lightgrey;
 }
 
+nav ul{
+  display: flex;
+}
+
 .mobile{
   display: none;
+}
+
+@media only screen and (max-width:860px){
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+    width: 100%;
+    padding-left: 3rem;
+  }
+
+  .mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home-link{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:640px){
+  .logo{
+    display: none;
+  }
+
+  .home-link{
+    display: list-item;
+  }
 }
 
 /* Main styles */
