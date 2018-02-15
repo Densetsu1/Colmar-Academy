@@ -189,13 +189,19 @@ main{
   }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
   .banner-link{
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .btn{
     margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .btn{
     width: 100%
   }
 }
@@ -283,6 +289,44 @@ main{
 .course article{
   padding: 1rem;
   padding-bottom: 1.5rem;
+}
+
+@media only screen and (max-width:1080px){
+  .course{
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width:860px){
+  .course article h4,
+  .course article p{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:640px){
+  .courses{
+    background-color: white;
+    border-top: solid lightgrey 1px;
+    border-bottom: solid lightgrey 1px;
+  }
+
+  .group{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .course{
+    min-width: 95%;
+    background-color: lightgrey;
+    margin: 0.5rem;
+  }
+
+  .course img{
+    display: none;
+  }
 }
 
 .exibit{
