@@ -33,10 +33,18 @@ h1{
 
 h2{
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 h3{
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 1rem;
+  font-weight: normal;
+  padding: .5rem 0;
 }
 
 /* Header styles */
@@ -153,6 +161,37 @@ main{
 
 .right-container a{
   color: blue;
+}
+
+.courses{
+  flex-direction: column;
+  padding: 2rem 0;
+  background-color: lightgrey;
+}
+
+.group{
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 3.5rem;
+  padding-top: 1rem;
+}
+
+.course{
+  max-width: 30%;
+  height: auto;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course img{
+  width: 100%;
+  height: auto;
+}
+
+.course article{
+  padding: 1rem;
 }
 
 .btm-Correction{
