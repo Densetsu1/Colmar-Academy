@@ -3,9 +3,8 @@ html {
   font-size: 16px;
 }
 
-header, footer{
+header, main, footer{
   width: 1080px;
-  height: 4rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -24,11 +23,24 @@ li{
   padding: 0 .5rem;
 }
 
+h1{
+  font-size: 2.75rem;
+  font-weight: bolder;
+  padding: 2rem 0;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
 /* Header styles */
 
 header{
+  height: 4rem;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   align-content: center;
   font-size: 1.2rem;
 }
@@ -50,13 +62,53 @@ header span{
   display: none;
 }
 
+/* Main styles */
+
+main{
+  position: relative;
+  top: 4rem;
+}
+
+.banner{
+  background-color: lightgrey;
+}
+
+.banner img{
+  max-width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+}
+
+.banner-info{
+  max-width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn{
+  width: 70%;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 2rem 0;
+}
+
 /* Footer styles */
 
 footer{
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   align-items: baseline;
   font-size: .8rem;
+  padding-top: 1rem;
+  border-top: solid black 1px;
+  padding-bottom: 3rem;
 }
 
 footer p{
